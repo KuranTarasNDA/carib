@@ -1,9 +1,8 @@
 .hero
   height: 1080px
-  padding-top: 120px
-  padding-bottom: 80px
   display: flex
   position: relative
+  padding: 120px 20px 80px 20px
   .container
     justify-content: space-between
     align-items: flex-end
@@ -11,9 +10,14 @@
     position: relative
     z-index: 5
     .hero__title
-      position: relative
-      margin-top: -130px
-      transform: translateY(-5px)
+      width: 61.1%
+      img
+        transform: translateY(-5px)
+        position: absolute
+        width: 61.1%
+        left: -30px
+        object-fit: contain
+        bottom: -10px
     .hero__right
       display: flex
       flex-direction: column

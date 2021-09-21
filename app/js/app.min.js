@@ -180,7 +180,29 @@ $(window).on("load" , function () {
         $('.popup_manual').removeClass('popup_active')
         $('body').removeClass('scroll')
     })
+
+
+    $('.header__open-phone').on('click', () => {
+        $('.header__open-phone').toggleClass('header__open-phone_active')
+
+        if ($('.header__open-phone').hasClass('header__open-phone_active')) {
+            $('.header__phone-wrapper').slideDown()
+            $('body').addClass('scroll')
+            $('.header').addClass('header_active')
+        } else {
+            $('.header__phone-wrapper').slideUp()
+            $('body').removeClass('scroll')
+            $('.header').removeClass('header_active')
+        }
+    })
 })
+
+
+
+
+
+
+
 
 
 
